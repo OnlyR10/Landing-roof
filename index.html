@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Лендинг кровля</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <nav class="nav-menu">
+        <a href="#" class="nav-menu__home"></a>
+        <a href="#" class="nav-menu__link">Каталог</a>
+        <a href="#" class="nav-menu__link">Преимущества</a>
+        <a href="#" class="nav-menu__link">Примеры работ</a>
+        <a href="#" class="nav-menu__link">Монтаж</a>
+        <a href="#" class="nav-menu__link">Отзывы</a>
+        <a href="#" class="nav-menu__link">Ответы на вопросы</a>
+        <a href="#" class="nav-menu__link">Контакты</a>
+      </nav>
+      <div class="burger-menu">
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+      </div>
+      <div class="hat">
+        <div class="hat__info">
+          <p><strong>Кровельные и фасадные материалы</strong> в Тюмени и области.</p>
+          <p>Профессиональный монтаж с 2010 года.</p>
+        </div>
+        <div class="hat__price">
+          <a href="#" class="hat__price-info">
+            <span class="hat__price-icon">Pdf</span>
+            <span class="hat__price-text">Скачать прайс-каталог</span>
+          </a>
+        </div>
+        <div class="hat__logo">
+          <div class="hat__logo-shape">
+            <div class="hat__logo-image"></div>
+          </div>
+        </div>
+        <div class="hat__messengers">
+          <div class="hat__messengers-info">
+            <div class="hat__messengers-text">Отвечаем <strong>онлайн</strong></div>
+          </div>
+          <ul class="hat__messengers-icons">
+            <li>
+              <a href="viber://chat?number=+88002225460" rel="noopener noreferrer" target="_blank"
+                class="hat__messengers-icon hat__messengers-icon--viber"></a>
+            </li>
+            <li>
+              <a href="https://wa.me/88002225460" rel="noopener noreferrer" target="_blank"
+                class="hat__messengers-icon hat__messengers-icon--whatsapp"></a>
+            </li>
+            <li>
+              <a href="https://t.me/telegram" rel="noopener noreferrer" target="_blank"
+                class="hat__messengers-icon hat__messengers-icon--telegram"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hat__contacts">
+          <div class="hat__contacts-info">
+            <div class="hat__contacts-schedule">
+              <strong>Пн-Пт</strong> 9:00 - 18:00, <strong>Сб</strong> 10:00 - 18:00
+            </div>
+          </div>
+          <a href="tel:88002225460" class="hat__contacts-phone-number">8 (800) 222-54-60</a>
+          <a href="#callback-modal" class="hat__contacts-link">Позвоните мне</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">Продажа <strong>кровельных материалов</strong> в Тюмени и Тюменской области</h1>
+      <h2 class="main__subtitle">
+        <span class="ellipsis">
+          <span class="ellipsis__dot"></span>
+          <span class="ellipsis__dot"></span>
+          <span class="ellipsis__dot"></span>
+          <span class="ellipsis__dot"></span>
+        </span>
+        и монтаж под ключ
+      </h2>
+
+      <div class="main__buttons">
+        <a href="#" class="button button--secondary button--icon button--arrow-top-right">
+          <span class="button__text">Рассчитать стоимость<br />материалов и монтажа</span>
+        </a>
+        <a href="#" class="button button--primary button--icon button--arrow-top-right">
+          <span class="button__text">Записаться на<br />просмотр объектов</span>
+        </a>
+      </div>
+      <div class="main__questions">
+        <a href="#" class="questions-button">
+          <span class="questions-button__text">
+            <strong>Ответьте на несколько вопросов и получите</strong> сметную стоимость и 3 подарка за
+            экономию нашего времени
+          </span>
+        </a>
+      </div>
+    </main>
+
+    <aside class="bullets">
+      <div class="bullets__item"><strong>Гарантия от 50 лет</strong> на материалы и 5 лет на монтаж</div>
+      <div class="bullets__item"><strong>Замер, монтажный проект</strong> и еще 4 услуги бесплатно</div>
+      <div class="bullets__item"><strong>Сметы точны</strong> до копейки</div>
+      <div class="bullets__item"><strong>Поэтапная оплата,</strong> кредит или рассрочка</div>
+      <div class="bullets__item">
+        <strong>Наши крыши в каждом поселке</strong> и дачном сообществе региона
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal-container hidden">
+    <div id="callback-modal" class="modal-window hidden">
+      <a href="#" data-modal="close" class="modal-window__close">
+        <svg width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.36 16.57L13.12 10.2L19.36 3.84C20.21 2.97 20.21 1.54 19.36 0.66C18.49 -0.22 17.1 -0.22 16.24 0.66L10.01 7.03L3.77 0.66C2.9 -0.21 1.52 -0.22 0.65 0.66C-0.21 1.55 -0.21 2.97 0.65 3.84L6.89 10.2L0.65 16.57C-0.22 17.44 -0.22 18.87 0.65 19.74C1.08 20.18 1.65 20.4 2.2 20.4C2.76 20.4 3.34 20.18 3.76 19.74L10.01 13.39L16.25 19.75C16.68 20.2 17.24 20.41 17.8 20.41C18.37 20.41 18.94 20.2 19.36 19.75C20.21 18.87 20.21 17.44 19.36 16.57Z" />
+        </svg>
+      </a>
+      <section class="callback-modal">
+        <h1 class="callback-modal__title">Быстро оставить заявку</h1>
+        <p class="callback-modal__subtitle">
+          Введите номер, мы позвоним вам в течение 10 минут в рабочее время
+        </p>
+        <p class="callback-modal__schedule">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+        <form class="callback-modal__form" method="POST">
+          <div class="input-group">
+            <label for="callbackphone" class="input-group__label"> Введите номер телефона </label>
+            <input id="callbackphone" type="text" name="phone" class="input input-group__input"
+              placeholder="+7 ( _ _ _ ) _ _ - _ _ - _ _"
+              data-inputmask="'mask' : '+7 ( 9 9 9 ) 9 9 - 9 9 - 9 9', 'removeMaskOnSubmit': true" required />
+          </div>
+          <button type="submit" class="button button--primary button--icon button--arrow-right button--full">
+            <span class="button__text">Позвоните мне</span>
+          </button>
+          <input type="checkbox" id="agreement" name="agreement" required class="hidden-checkbox" />
+          <label for="agreement" class="checkbox-label">
+            <span class="checkbox-label__text">
+              Нажимая кнопку вы соглашаетесь с условиями
+              <a href="#" target="_blank" class="link">Политики конфиденциальности</a>
+            </span>
+          </label>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="assets/js/inputmask.min.js"></script>
+  <script src="assets/js/init.js"></script>
+</body>
+
+</html>
