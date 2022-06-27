@@ -40,7 +40,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: url(../images/BG.png);
+    background: url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
